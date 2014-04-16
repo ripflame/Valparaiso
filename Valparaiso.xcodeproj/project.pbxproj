@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D63DC5518FEECD000623B10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5418FEECD000623B10 /* Foundation.framework */; };
+		7D63DC5718FEECD000623B10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5618FEECD000623B10 /* CoreGraphics.framework */; };
+		7D63DC5918FEECD000623B10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5818FEECD000623B10 /* UIKit.framework */; };
+		7D63DC5B18FEECD000623B10 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5A18FEECD000623B10 /* CoreData.framework */; };
+		7D63DC6118FEECD000623B10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC5F18FEECD000623B10 /* InfoPlist.strings */; };
+		7D63DC6318FEECD000623B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC6218FEECD000623B10 /* main.m */; };
+		7D63DC6718FEECD000623B10 /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC6618FEECD000623B10 /* GLAppDelegate.m */; };
+		7D63DC6A18FEECD000623B10 /* Valparaiso.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC6818FEECD000623B10 /* Valparaiso.xcdatamodeld */; };
+		7D63DC6C18FEECD000623B10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC6B18FEECD000623B10 /* Images.xcassets */; };
+		7D63DC7318FEECD000623B10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC7218FEECD000623B10 /* XCTest.framework */; };
+		7D63DC7418FEECD000623B10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5418FEECD000623B10 /* Foundation.framework */; };
+		7D63DC7518FEECD000623B10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5818FEECD000623B10 /* UIKit.framework */; };
+		7D63DC7618FEECD000623B10 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5A18FEECD000623B10 /* CoreData.framework */; };
+		7D63DC7E18FEECD000623B10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC7C18FEECD000623B10 /* InfoPlist.strings */; };
+		7D63DC8018FEECD000623B10 /* ValparaisoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC7F18FEECD000623B10 /* ValparaisoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D63DC7718FEECD000623B10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D63DC4918FEECD000623B10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D63DC5018FEECD000623B10;
+			remoteInfo = Valparaiso;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D63DC5118FEECD000623B10 /* Valparaiso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valparaiso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D63DC5418FEECD000623B10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D63DC5618FEECD000623B10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D63DC5818FEECD000623B10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D63DC5A18FEECD000623B10 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7D63DC5E18FEECD000623B10 /* Valparaiso-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Valparaiso-Info.plist"; sourceTree = "<group>"; };
+		7D63DC6018FEECD000623B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D63DC6218FEECD000623B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D63DC6418FEECD000623B10 /* Valparaiso-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Valparaiso-Prefix.pch"; sourceTree = "<group>"; };
+		7D63DC6518FEECD000623B10 /* GLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
+		7D63DC6618FEECD000623B10 /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
+		7D63DC6918FEECD000623B10 /* Valparaiso.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Valparaiso.xcdatamodel; sourceTree = "<group>"; };
+		7D63DC6B18FEECD000623B10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7D63DC7118FEECD000623B10 /* ValparaisoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValparaisoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D63DC7218FEECD000623B10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7D63DC7B18FEECD000623B10 /* ValparaisoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ValparaisoTests-Info.plist"; sourceTree = "<group>"; };
+		7D63DC7D18FEECD000623B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D63DC7F18FEECD000623B10 /* ValparaisoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValparaisoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D63DC4E18FEECD000623B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D63DC5718FEECD000623B10 /* CoreGraphics.framework in Frameworks */,
+				7D63DC5B18FEECD000623B10 /* CoreData.framework in Frameworks */,
+				7D63DC5918FEECD000623B10 /* UIKit.framework in Frameworks */,
+				7D63DC5518FEECD000623B10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D63DC6E18FEECD000623B10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D63DC7318FEECD000623B10 /* XCTest.framework in Frameworks */,
+				7D63DC7618FEECD000623B10 /* CoreData.framework in Frameworks */,
+				7D63DC7518FEECD000623B10 /* UIKit.framework in Frameworks */,
+				7D63DC7418FEECD000623B10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D63DC4818FEECD000623B10 = {
+			isa = PBXGroup;
+			children = (
+				7D63DC5C18FEECD000623B10 /* Valparaiso */,
+				7D63DC7918FEECD000623B10 /* ValparaisoTests */,
+				7D63DC5318FEECD000623B10 /* Frameworks */,
+				7D63DC5218FEECD000623B10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D63DC5218FEECD000623B10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D63DC5118FEECD000623B10 /* Valparaiso.app */,
+				7D63DC7118FEECD000623B10 /* ValparaisoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D63DC5318FEECD000623B10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D63DC5418FEECD000623B10 /* Foundation.framework */,
+				7D63DC5618FEECD000623B10 /* CoreGraphics.framework */,
+				7D63DC5818FEECD000623B10 /* UIKit.framework */,
+				7D63DC5A18FEECD000623B10 /* CoreData.framework */,
+				7D63DC7218FEECD000623B10 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D63DC5C18FEECD000623B10 /* Valparaiso */ = {
+			isa = PBXGroup;
+			children = (
+				7D63DC6518FEECD000623B10 /* GLAppDelegate.h */,
+				7D63DC6618FEECD000623B10 /* GLAppDelegate.m */,
+				7D63DC6B18FEECD000623B10 /* Images.xcassets */,
+				7D63DC6818FEECD000623B10 /* Valparaiso.xcdatamodeld */,
+				7D63DC5D18FEECD000623B10 /* Supporting Files */,
+			);
+			path = Valparaiso;
+			sourceTree = "<group>";
+		};
+		7D63DC5D18FEECD000623B10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D63DC5E18FEECD000623B10 /* Valparaiso-Info.plist */,
+				7D63DC5F18FEECD000623B10 /* InfoPlist.strings */,
+				7D63DC6218FEECD000623B10 /* main.m */,
+				7D63DC6418FEECD000623B10 /* Valparaiso-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D63DC7918FEECD000623B10 /* ValparaisoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D63DC7F18FEECD000623B10 /* ValparaisoTests.m */,
+				7D63DC7A18FEECD000623B10 /* Supporting Files */,
+			);
+			path = ValparaisoTests;
+			sourceTree = "<group>";
+		};
+		7D63DC7A18FEECD000623B10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D63DC7B18FEECD000623B10 /* ValparaisoTests-Info.plist */,
+				7D63DC7C18FEECD000623B10 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D63DC5018FEECD000623B10 /* Valparaiso */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D63DC8318FEECD000623B10 /* Build configuration list for PBXNativeTarget "Valparaiso" */;
+			buildPhases = (
+				7D63DC4D18FEECD000623B10 /* Sources */,
+				7D63DC4E18FEECD000623B10 /* Frameworks */,
+				7D63DC4F18FEECD000623B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Valparaiso;
+			productName = Valparaiso;
+			productReference = 7D63DC5118FEECD000623B10 /* Valparaiso.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D63DC7018FEECD000623B10 /* ValparaisoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D63DC8618FEECD000623B10 /* Build configuration list for PBXNativeTarget "ValparaisoTests" */;
+			buildPhases = (
+				7D63DC6D18FEECD000623B10 /* Sources */,
+				7D63DC6E18FEECD000623B10 /* Frameworks */,
+				7D63DC6F18FEECD000623B10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D63DC7818FEECD000623B10 /* PBXTargetDependency */,
+			);
+			name = ValparaisoTests;
+			productName = ValparaisoTests;
+			productReference = 7D63DC7118FEECD000623B10 /* ValparaisoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D63DC4918FEECD000623B10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Ripflame;
+				TargetAttributes = {
+					7D63DC7018FEECD000623B10 = {
+						TestTargetID = 7D63DC5018FEECD000623B10;
+					};
+				};
+			};
+			buildConfigurationList = 7D63DC4C18FEECD000623B10 /* Build configuration list for PBXProject "Valparaiso" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D63DC4818FEECD000623B10;
+			productRefGroup = 7D63DC5218FEECD000623B10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D63DC5018FEECD000623B10 /* Valparaiso */,
+				7D63DC7018FEECD000623B10 /* ValparaisoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D63DC4F18FEECD000623B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D63DC6118FEECD000623B10 /* InfoPlist.strings in Resources */,
+				7D63DC6C18FEECD000623B10 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D63DC6F18FEECD000623B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D63DC7E18FEECD000623B10 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D63DC4D18FEECD000623B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D63DC6318FEECD000623B10 /* main.m in Sources */,
+				7D63DC6A18FEECD000623B10 /* Valparaiso.xcdatamodeld in Sources */,
+				7D63DC6718FEECD000623B10 /* GLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D63DC6D18FEECD000623B10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D63DC8018FEECD000623B10 /* ValparaisoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D63DC7818FEECD000623B10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D63DC5018FEECD000623B10 /* Valparaiso */;
+			targetProxy = 7D63DC7718FEECD000623B10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D63DC5F18FEECD000623B10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D63DC6018FEECD000623B10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7D63DC7C18FEECD000623B10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D63DC7D18FEECD000623B10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D63DC8118FEECD000623B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7D63DC8218FEECD000623B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D63DC8418FEECD000623B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Valparaiso/Valparaiso-Prefix.pch";
+				INFOPLIST_FILE = "Valparaiso/Valparaiso-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7D63DC8518FEECD000623B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Valparaiso/Valparaiso-Prefix.pch";
+				INFOPLIST_FILE = "Valparaiso/Valparaiso-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7D63DC8718FEECD000623B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Valparaiso.app/Valparaiso";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Valparaiso/Valparaiso-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ValparaisoTests/ValparaisoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7D63DC8818FEECD000623B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Valparaiso.app/Valparaiso";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Valparaiso/Valparaiso-Prefix.pch";
+				INFOPLIST_FILE = "ValparaisoTests/ValparaisoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D63DC4C18FEECD000623B10 /* Build configuration list for PBXProject "Valparaiso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D63DC8118FEECD000623B10 /* Debug */,
+				7D63DC8218FEECD000623B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D63DC8318FEECD000623B10 /* Build configuration list for PBXNativeTarget "Valparaiso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D63DC8418FEECD000623B10 /* Debug */,
+				7D63DC8518FEECD000623B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7D63DC8618FEECD000623B10 /* Build configuration list for PBXNativeTarget "ValparaisoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D63DC8718FEECD000623B10 /* Debug */,
+				7D63DC8818FEECD000623B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7D63DC6818FEECD000623B10 /* Valparaiso.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7D63DC6918FEECD000623B10 /* Valparaiso.xcdatamodel */,
+			);
+			currentVersion = 7D63DC6918FEECD000623B10 /* Valparaiso.xcdatamodel */;
+			path = Valparaiso.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7D63DC4918FEECD000623B10 /* Project object */;
+}
