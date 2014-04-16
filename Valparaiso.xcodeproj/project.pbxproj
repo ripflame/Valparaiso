@@ -22,6 +22,7 @@
 		7D63DC7618FEECD000623B10 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5A18FEECD000623B10 /* CoreData.framework */; };
 		7D63DC7E18FEECD000623B10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC7C18FEECD000623B10 /* InfoPlist.strings */; };
 		7D63DC8018FEECD000623B10 /* ValparaisoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC7F18FEECD000623B10 /* ValparaisoTests.m */; };
+		7D63DC8A18FEED4800623B10 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC8918FEED4800623B10 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7D63DC7B18FEECD000623B10 /* ValparaisoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ValparaisoTests-Info.plist"; sourceTree = "<group>"; };
 		7D63DC7D18FEECD000623B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7D63DC7F18FEECD000623B10 /* ValparaisoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValparaisoTests.m; sourceTree = "<group>"; };
+		7D63DC8918FEED4800623B10 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		7D63DC5C18FEECD000623B10 /* Valparaiso */ = {
 			isa = PBXGroup;
 			children = (
+				7D63DC8918FEED4800623B10 /* Storyboard.storyboard */,
 				7D63DC6518FEECD000623B10 /* GLAppDelegate.h */,
 				7D63DC6618FEECD000623B10 /* GLAppDelegate.m */,
 				7D63DC6B18FEECD000623B10 /* Images.xcassets */,
@@ -231,6 +234,7 @@
 			files = (
 				7D63DC6118FEECD000623B10 /* InfoPlist.strings in Resources */,
 				7D63DC6C18FEECD000623B10 /* Images.xcassets in Resources */,
+				7D63DC8A18FEED4800623B10 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
