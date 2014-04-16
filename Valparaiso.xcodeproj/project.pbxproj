@@ -23,6 +23,11 @@
 		7D63DC7E18FEECD000623B10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC7C18FEECD000623B10 /* InfoPlist.strings */; };
 		7D63DC8018FEECD000623B10 /* ValparaisoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC7F18FEECD000623B10 /* ValparaisoTests.m */; };
 		7D63DC8A18FEED4800623B10 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC8918FEED4800623B10 /* Storyboard.storyboard */; };
+		7D63DC8D18FEF67C00623B10 /* Sale.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC8C18FEF67C00623B10 /* Sale.m */; };
+		7D63DC9018FEF9D400623B10 /* GLDatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC8F18FEF9D400623B10 /* GLDatabaseController.m */; };
+		7D63DC9318FEFF3600623B10 /* GLSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC9218FEFF3600623B10 /* GLSaleViewController.m */; };
+		7D63DC9918FF4DD200623B10 /* saleIcon20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC9818FF4DD200623B10 /* saleIcon20.png */; };
+		7D63DC9D18FF4E8B00623B10 /* weekIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC9C18FF4E8B00623B10 /* weekIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,14 @@
 		7D63DC7D18FEECD000623B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7D63DC7F18FEECD000623B10 /* ValparaisoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValparaisoTests.m; sourceTree = "<group>"; };
 		7D63DC8918FEED4800623B10 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		7D63DC8B18FEF67C00623B10 /* Sale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sale.h; sourceTree = "<group>"; };
+		7D63DC8C18FEF67C00623B10 /* Sale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sale.m; sourceTree = "<group>"; };
+		7D63DC8E18FEF9D400623B10 /* GLDatabaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDatabaseController.h; sourceTree = "<group>"; };
+		7D63DC8F18FEF9D400623B10 /* GLDatabaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDatabaseController.m; sourceTree = "<group>"; };
+		7D63DC9118FEFF3600623B10 /* GLSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSaleViewController.h; sourceTree = "<group>"; };
+		7D63DC9218FEFF3600623B10 /* GLSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSaleViewController.m; sourceTree = "<group>"; };
+		7D63DC9818FF4DD200623B10 /* saleIcon20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saleIcon20.png; sourceTree = "<group>"; };
+		7D63DC9C18FF4E8B00623B10 /* weekIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weekIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +130,19 @@
 		7D63DC5C18FEECD000623B10 /* Valparaiso */ = {
 			isa = PBXGroup;
 			children = (
+				7D63DC9518FF4D6A00623B10 /* Resources */,
 				7D63DC8918FEED4800623B10 /* Storyboard.storyboard */,
+				7D63DC9118FEFF3600623B10 /* GLSaleViewController.h */,
+				7D63DC9218FEFF3600623B10 /* GLSaleViewController.m */,
 				7D63DC6518FEECD000623B10 /* GLAppDelegate.h */,
 				7D63DC6618FEECD000623B10 /* GLAppDelegate.m */,
 				7D63DC6B18FEECD000623B10 /* Images.xcassets */,
 				7D63DC6818FEECD000623B10 /* Valparaiso.xcdatamodeld */,
+				7D63DC8B18FEF67C00623B10 /* Sale.h */,
+				7D63DC8C18FEF67C00623B10 /* Sale.m */,
 				7D63DC5D18FEECD000623B10 /* Supporting Files */,
+				7D63DC8E18FEF9D400623B10 /* GLDatabaseController.h */,
+				7D63DC8F18FEF9D400623B10 /* GLDatabaseController.m */,
 			);
 			path = Valparaiso;
 			sourceTree = "<group>";
@@ -154,6 +174,15 @@
 				7D63DC7C18FEECD000623B10 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D63DC9518FF4D6A00623B10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D63DC9C18FF4E8B00623B10 /* weekIcon.png */,
+				7D63DC9818FF4DD200623B10 /* saleIcon20.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D63DC6118FEECD000623B10 /* InfoPlist.strings in Resources */,
+				7D63DC9918FF4DD200623B10 /* saleIcon20.png in Resources */,
 				7D63DC6C18FEECD000623B10 /* Images.xcassets in Resources */,
 				7D63DC8A18FEED4800623B10 /* Storyboard.storyboard in Resources */,
+				7D63DC9D18FF4E8B00623B10 /* weekIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +286,10 @@
 			files = (
 				7D63DC6318FEECD000623B10 /* main.m in Sources */,
 				7D63DC6A18FEECD000623B10 /* Valparaiso.xcdatamodeld in Sources */,
+				7D63DC9318FEFF3600623B10 /* GLSaleViewController.m in Sources */,
+				7D63DC8D18FEF67C00623B10 /* Sale.m in Sources */,
 				7D63DC6718FEECD000623B10 /* GLAppDelegate.m in Sources */,
+				7D63DC9018FEF9D400623B10 /* GLDatabaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

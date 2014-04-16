@@ -28,7 +28,7 @@
         <scene sceneID="DSv-iZ-Oy4">
             <objects>
                 <navigationController definesPresentationContext="YES" id="g7J-En-yeP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Venta" id="atz-gT-Rzj"/>
+                    <tabBarItem key="tabBarItem" title="Venta" image="saleIcon20.png" id="atz-gT-Rzj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wcZ-XS-vFx">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="704" y="-197"/>
         </scene>
-        <!--View Controller - Rancho Valparaiso-->
+        <!--Sale View Controller - Rancho Valparaiso-->
         <scene sceneID="UAH-Ef-3Aq">
             <objects>
-                <viewController id="ejA-a9-Em2" sceneMemberID="viewController">
+                <viewController id="ejA-a9-Em2" customClass="GLSaleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xZq-Rh-NGo"/>
                         <viewControllerLayoutGuide type="bottom" id="FFC-au-iEX"/>
@@ -71,12 +71,15 @@
                                 <state key="normal" title="Cambiar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeDatePressed:" destination="ejA-a9-Em2" eventType="touchUpInside" id="6Sr-JE-h6j"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NEL-4R-nZG">
                                 <rect key="frame" x="20" y="172" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cantidad:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNc-nc-LPs">
                                 <rect key="frame" x="20" y="143" width="75" height="21"/>
@@ -94,7 +97,7 @@
                                 <rect key="frame" x="20" y="239" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Precio:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQf-xx-2E3">
                                 <rect key="frame" x="20" y="277" width="75" height="21"/>
@@ -106,7 +109,7 @@
                                 <rect key="frame" x="20" y="306" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-Hp-vrw">
                                 <rect key="frame" x="137" y="377" width="46" height="30"/>
@@ -114,6 +117,9 @@
                                 <state key="normal" title="Hecho">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="ejA-a9-Em2" eventType="touchUpInside" id="TxF-KY-yfe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acumulable:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASq-hJ-v6r">
                                 <rect key="frame" x="201" y="143" width="99" height="21"/>
@@ -121,7 +127,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ch-pD-DnF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ch-pD-DnF">
                                 <rect key="frame" x="201" y="172" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -133,7 +139,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwJ-Sx-ukC">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TwJ-Sx-ukC">
                                 <rect key="frame" x="201" y="239" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -143,6 +149,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rancho Valparaiso" prompt="Venta de Mojarras" id="a4D-TW-AhY"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="mAi-MQ-gMH" id="EO5-gr-J2s"/>
+                        <outlet property="datePickerButton" destination="3V9-Bv-fGL" id="pgx-07-YAn"/>
+                        <outlet property="priceField" destination="urm-Zq-DPD" id="ouR-LM-EYG"/>
+                        <outlet property="quantityField" destination="NEL-4R-nZG" id="tHu-NQ-R3D"/>
+                        <outlet property="sumField" destination="9ch-pD-DnF" id="yf9-RD-apd"/>
+                        <outlet property="totalField" destination="TwJ-Sx-ukC" id="TkJ-wX-n7W"/>
+                        <outlet property="weightField" destination="RDM-RQ-2hE" id="RBi-yd-1oe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDJ-hP-uyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,7 +241,7 @@
         <scene sceneID="11J-se-SnV">
             <objects>
                 <navigationController definesPresentationContext="YES" id="YyX-IV-9Zv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Semanal" id="sUy-tw-Ure"/>
+                    <tabBarItem key="tabBarItem" title="Semanal" image="weekIcon.png" id="sUy-tw-Ure"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lkh-kf-DdJ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -239,6 +254,10 @@
             <point key="canvasLocation" x="704" y="938"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="saleIcon20.png" width="20" height="20"/>
+        <image name="weekIcon.png" width="26" height="26"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
