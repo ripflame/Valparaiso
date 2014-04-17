@@ -28,6 +28,11 @@
 		7D63DC9318FEFF3600623B10 /* GLSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC9218FEFF3600623B10 /* GLSaleViewController.m */; };
 		7D63DC9918FF4DD200623B10 /* saleIcon20.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC9818FF4DD200623B10 /* saleIcon20.png */; };
 		7D63DC9D18FF4E8B00623B10 /* weekIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DC9C18FF4E8B00623B10 /* weekIcon.png */; };
+		7D63DCA01900590000623B10 /* GLHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DC9F1900590000623B10 /* GLHistoryTableViewController.m */; };
+		7D63DCA3190059FE00623B10 /* GLSaleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DCA2190059FE00623B10 /* GLSaleTableViewCell.m */; };
+		7D63DCA519006F2300623B10 /* 1397784025_history.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCA419006F2300623B10 /* 1397784025_history.png */; };
+		7D63DCA81900733700623B10 /* GLDailyReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DCA71900733700623B10 /* GLDailyReportViewController.m */; };
+		7D63DCAA19007EA700623B10 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DCA919007EA700623B10 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,14 @@
 		7D63DC9218FEFF3600623B10 /* GLSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSaleViewController.m; sourceTree = "<group>"; };
 		7D63DC9818FF4DD200623B10 /* saleIcon20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saleIcon20.png; sourceTree = "<group>"; };
 		7D63DC9C18FF4E8B00623B10 /* weekIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weekIcon.png; sourceTree = "<group>"; };
+		7D63DC9E1900590000623B10 /* GLHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHistoryTableViewController.h; sourceTree = "<group>"; };
+		7D63DC9F1900590000623B10 /* GLHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHistoryTableViewController.m; sourceTree = "<group>"; };
+		7D63DCA1190059FE00623B10 /* GLSaleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSaleTableViewCell.h; sourceTree = "<group>"; };
+		7D63DCA2190059FE00623B10 /* GLSaleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLSaleTableViewCell.m; sourceTree = "<group>"; };
+		7D63DCA419006F2300623B10 /* 1397784025_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1397784025_history.png; sourceTree = "<group>"; };
+		7D63DCA61900733700623B10 /* GLDailyReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDailyReportViewController.h; sourceTree = "<group>"; };
+		7D63DCA71900733700623B10 /* GLDailyReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDailyReportViewController.m; sourceTree = "<group>"; };
+		7D63DCA919007EA700623B10 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D63DCAA19007EA700623B10 /* MessageUI.framework in Frameworks */,
 				7D63DC5718FEECD000623B10 /* CoreGraphics.framework in Frameworks */,
 				7D63DC5B18FEECD000623B10 /* CoreData.framework in Frameworks */,
 				7D63DC5918FEECD000623B10 /* UIKit.framework in Frameworks */,
@@ -118,6 +132,7 @@
 		7D63DC5318FEECD000623B10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D63DCA919007EA700623B10 /* MessageUI.framework */,
 				7D63DC5418FEECD000623B10 /* Foundation.framework */,
 				7D63DC5618FEECD000623B10 /* CoreGraphics.framework */,
 				7D63DC5818FEECD000623B10 /* UIKit.framework */,
@@ -132,6 +147,12 @@
 			children = (
 				7D63DC9518FF4D6A00623B10 /* Resources */,
 				7D63DC8918FEED4800623B10 /* Storyboard.storyboard */,
+				7D63DCA61900733700623B10 /* GLDailyReportViewController.h */,
+				7D63DCA71900733700623B10 /* GLDailyReportViewController.m */,
+				7D63DCA1190059FE00623B10 /* GLSaleTableViewCell.h */,
+				7D63DCA2190059FE00623B10 /* GLSaleTableViewCell.m */,
+				7D63DC9E1900590000623B10 /* GLHistoryTableViewController.h */,
+				7D63DC9F1900590000623B10 /* GLHistoryTableViewController.m */,
 				7D63DC9118FEFF3600623B10 /* GLSaleViewController.h */,
 				7D63DC9218FEFF3600623B10 /* GLSaleViewController.m */,
 				7D63DC6518FEECD000623B10 /* GLAppDelegate.h */,
@@ -179,6 +200,7 @@
 		7D63DC9518FF4D6A00623B10 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D63DCA419006F2300623B10 /* 1397784025_history.png */,
 				7D63DC9C18FF4E8B00623B10 /* weekIcon.png */,
 				7D63DC9818FF4DD200623B10 /* saleIcon20.png */,
 			);
@@ -261,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D63DCA519006F2300623B10 /* 1397784025_history.png in Resources */,
 				7D63DC6118FEECD000623B10 /* InfoPlist.strings in Resources */,
 				7D63DC9918FF4DD200623B10 /* saleIcon20.png in Resources */,
 				7D63DC6C18FEECD000623B10 /* Images.xcassets in Resources */,
@@ -287,8 +310,11 @@
 				7D63DC6318FEECD000623B10 /* main.m in Sources */,
 				7D63DC6A18FEECD000623B10 /* Valparaiso.xcdatamodeld in Sources */,
 				7D63DC9318FEFF3600623B10 /* GLSaleViewController.m in Sources */,
+				7D63DCA3190059FE00623B10 /* GLSaleTableViewCell.m in Sources */,
 				7D63DC8D18FEF67C00623B10 /* Sale.m in Sources */,
 				7D63DC6718FEECD000623B10 /* GLAppDelegate.m in Sources */,
+				7D63DCA01900590000623B10 /* GLHistoryTableViewController.m in Sources */,
+				7D63DCA81900733700623B10 /* GLDailyReportViewController.m in Sources */,
 				7D63DC9018FEF9D400623B10 /* GLDatabaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

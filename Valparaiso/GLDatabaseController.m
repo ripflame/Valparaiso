@@ -14,7 +14,7 @@
 
 @implementation GLDatabaseController
 
-+ (NSDictionary *) createSaleWithDate:(NSDate *)date quantity:(NSNumber *)quantity weight:(NSNumber *)weight andPrice:(NSNumber *)price {
++ (NSDictionary *)createSaleWithDate:(NSDate *)date quantity:(NSNumber *)quantity weight:(NSNumber *)weight andPrice:(NSNumber *)price {
     GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
@@ -36,7 +36,7 @@
     return response;
 }
 
-+ (NSNumber *) getSalesTotalFromDay:(NSDate *)day {
++ (NSNumber *)getSalesTotalFromDay:(NSDate *)day {
     GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
@@ -55,6 +55,56 @@
     if (!error) {
         for (Sale *sale in fetchedObjects) {
             dayTotal += [sale.price doubleValue] * [sale.weight doubleValue];
+        }
+    }
+    
+    return [NSNumber numberWithDouble:dayTotal];
+}
+
++ (NSNumber *)getQuantityTotalFromDay:(NSDate *)day {
+    GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:SALE inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"date == %@ ", day];
+    [request setEntity:entity];
+    [request setPredicate:predicate];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:request error:&error];
+    
+    
+    int dayTotal = 0;
+    
+    if (!error) {
+        for (Sale *sale in fetchedObjects) {
+            dayTotal += [sale.quantity intValue];
+        }
+    }
+    
+    return [NSNumber numberWithInt:dayTotal];
+}
+
++ (NSNumber *)getWeightTotalFromDay:(NSDate *)day {
+    GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:SALE inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"date == %@ ", day];
+    [request setEntity:entity];
+    [request setPredicate:predicate];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:request error:&error];
+    
+    
+    double dayTotal = 0;
+    
+    if (!error) {
+        for (Sale *sale in fetchedObjects) {
+            dayTotal += [sale.weight doubleValue];
         }
     }
     

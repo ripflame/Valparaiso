@@ -10,8 +10,10 @@
 
 @interface GLDatabaseController : NSObject
 
-+ (NSDictionary *) createSaleWithDate:(NSDate *)date quantity:(NSNumber *)quantity weight:(NSNumber *)weight andPrice:(NSNumber *)price;
++ (NSDictionary *)createSaleWithDate:(NSDate *)date quantity:(NSNumber *)quantity weight:(NSNumber *)weight andPrice:(NSNumber *)price;
 
-+ (NSNumber *) getSalesTotalFromDay:(NSDate *)day;
++ (NSNumber *)getSalesTotalFromDay:(NSDate *)day;
++ (NSNumber *)getQuantityTotalFromDay:(NSDate *)day;
++ (NSNumber *)getWeightTotalFromDay:(NSDate *)day;
 
 @end
