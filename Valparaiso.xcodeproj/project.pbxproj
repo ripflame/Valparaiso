@@ -33,6 +33,17 @@
 		7D63DCA519006F2300623B10 /* 1397784025_history.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCA419006F2300623B10 /* 1397784025_history.png */; };
 		7D63DCA81900733700623B10 /* GLDailyReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63DCA71900733700623B10 /* GLDailyReportViewController.m */; };
 		7D63DCAA19007EA700623B10 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DCA919007EA700623B10 /* MessageUI.framework */; };
+		7D63DCB7190093F300623B10 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCB3190093F300623B10 /* appIcon.png */; };
+		7D63DCB8190093F300623B10 /* appIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCB4190093F300623B10 /* appIcon@2x.png */; };
+		7D63DCB9190093F300623B10 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCB5190093F300623B10 /* iTunesArtwork.png */; };
+		7D63DCBA190093F300623B10 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCB6190093F300623B10 /* iTunesArtwork@2x.png */; };
+		7D63DCBD1900950C00623B10 /* appIconSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCBB1900950C00623B10 /* appIconSettings.png */; };
+		7D63DCBE1900950C00623B10 /* appIconSpotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCBC1900950C00623B10 /* appIconSpotlight.png */; };
+		7D63DCCD19009A8400623B10 /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCCB19009A8400623B10 /* navBar.png */; };
+		7D63DCCE19009A8400623B10 /* navBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCCC19009A8400623B10 /* navBar@2x.png */; };
+		7D63DCD119009AF500623B10 /* launchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCCF19009AF500623B10 /* launchImage.png */; };
+		7D63DCD219009AF500623B10 /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCD019009AF500623B10 /* launchImage@2x.png */; };
+		7D63DCD41900A38200623B10 /* launchImageUltra.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCD31900A38200623B10 /* launchImageUltra.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +92,17 @@
 		7D63DCA61900733700623B10 /* GLDailyReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDailyReportViewController.h; sourceTree = "<group>"; };
 		7D63DCA71900733700623B10 /* GLDailyReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLDailyReportViewController.m; sourceTree = "<group>"; };
 		7D63DCA919007EA700623B10 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7D63DCB3190093F300623B10 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		7D63DCB4190093F300623B10 /* appIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appIcon@2x.png"; sourceTree = "<group>"; };
+		7D63DCB5190093F300623B10 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		7D63DCB6190093F300623B10 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		7D63DCBB1900950C00623B10 /* appIconSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconSettings.png; sourceTree = "<group>"; };
+		7D63DCBC1900950C00623B10 /* appIconSpotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconSpotlight.png; sourceTree = "<group>"; };
+		7D63DCCB19009A8400623B10 /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
+		7D63DCCC19009A8400623B10 /* navBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navBar@2x.png"; sourceTree = "<group>"; };
+		7D63DCCF19009AF500623B10 /* launchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage.png; sourceTree = "<group>"; };
+		7D63DCD019009AF500623B10 /* launchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.png"; sourceTree = "<group>"; };
+		7D63DCD31900A38200623B10 /* launchImageUltra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageUltra.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +222,17 @@
 		7D63DC9518FF4D6A00623B10 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D63DCD31900A38200623B10 /* launchImageUltra.png */,
+				7D63DCCF19009AF500623B10 /* launchImage.png */,
+				7D63DCD019009AF500623B10 /* launchImage@2x.png */,
+				7D63DCCB19009A8400623B10 /* navBar.png */,
+				7D63DCCC19009A8400623B10 /* navBar@2x.png */,
+				7D63DCBB1900950C00623B10 /* appIconSettings.png */,
+				7D63DCBC1900950C00623B10 /* appIconSpotlight.png */,
+				7D63DCB3190093F300623B10 /* appIcon.png */,
+				7D63DCB4190093F300623B10 /* appIcon@2x.png */,
+				7D63DCB5190093F300623B10 /* iTunesArtwork.png */,
+				7D63DCB6190093F300623B10 /* iTunesArtwork@2x.png */,
 				7D63DCA419006F2300623B10 /* 1397784025_history.png */,
 				7D63DC9C18FF4E8B00623B10 /* weekIcon.png */,
 				7D63DC9818FF4DD200623B10 /* saleIcon20.png */,
@@ -283,10 +316,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D63DCD41900A38200623B10 /* launchImageUltra.png in Resources */,
+				7D63DCD119009AF500623B10 /* launchImage.png in Resources */,
+				7D63DCBD1900950C00623B10 /* appIconSettings.png in Resources */,
 				7D63DCA519006F2300623B10 /* 1397784025_history.png in Resources */,
 				7D63DC6118FEECD000623B10 /* InfoPlist.strings in Resources */,
+				7D63DCCE19009A8400623B10 /* navBar@2x.png in Resources */,
+				7D63DCB7190093F300623B10 /* appIcon.png in Resources */,
 				7D63DC9918FF4DD200623B10 /* saleIcon20.png in Resources */,
+				7D63DCBE1900950C00623B10 /* appIconSpotlight.png in Resources */,
+				7D63DCB9190093F300623B10 /* iTunesArtwork.png in Resources */,
+				7D63DCBA190093F300623B10 /* iTunesArtwork@2x.png in Resources */,
 				7D63DC6C18FEECD000623B10 /* Images.xcassets in Resources */,
+				7D63DCCD19009A8400623B10 /* navBar.png in Resources */,
+				7D63DCB8190093F300623B10 /* appIcon@2x.png in Resources */,
+				7D63DCD219009AF500623B10 /* launchImage@2x.png in Resources */,
 				7D63DC8A18FEED4800623B10 /* Storyboard.storyboard in Resources */,
 				7D63DC9D18FF4E8B00623B10 /* weekIcon.png in Resources */,
 			);
@@ -430,8 +474,8 @@
 		7D63DC8418FEECD000623B10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Valparaiso/Valparaiso-Prefix.pch";
 				INFOPLIST_FILE = "Valparaiso/Valparaiso-Info.plist";
@@ -443,8 +487,8 @@
 		7D63DC8518FEECD000623B10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Valparaiso/Valparaiso-Prefix.pch";
 				INFOPLIST_FILE = "Valparaiso/Valparaiso-Info.plist";
@@ -512,6 +556,7 @@
 				7D63DC8518FEECD000623B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D63DC8618FEECD000623B10 /* Build configuration list for PBXNativeTarget "ValparaisoTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +565,7 @@
 				7D63DC8818FEECD000623B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

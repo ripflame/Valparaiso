@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="704" y="-197"/>
         </scene>
-        <!--Sale View Controller - Rancho Valparaiso-->
+        <!--Sale View Controller - Venta de Mojarras-->
         <scene sceneID="UAH-Ef-3Aq">
             <objects>
                 <viewController id="ejA-a9-Em2" customClass="GLSaleViewController" sceneMemberID="viewController">
@@ -148,7 +148,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Rancho Valparaiso" prompt="Venta de Mojarras" id="a4D-TW-AhY"/>
+                    <navigationItem key="navigationItem" title="Venta de Mojarras" prompt="Rancho Valparaiso" id="a4D-TW-AhY"/>
                     <connections>
                         <outlet property="dateLabel" destination="mAi-MQ-gMH" id="EO5-gr-J2s"/>
                         <outlet property="datePickerButton" destination="3V9-Bv-fGL" id="pgx-07-YAn"/>
@@ -173,7 +173,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SaleCell" rowHeight="120" id="KwN-Dr-cD5" customClass="GLSaleTableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="120"/>
+                                <rect key="frame" x="0.0" y="116" width="320" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KwN-Dr-cD5" id="hen-em-uE4">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
@@ -242,7 +242,7 @@
                             <outlet property="delegate" destination="PUz-dH-Amu" id="tP9-ah-fmK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Historial" id="qSi-xy-51G"/>
+                    <navigationItem key="navigationItem" title="Historial" prompt="Rancho Valparaiso" id="qSi-xy-51G"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nn7-Yl-TTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -293,43 +293,43 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mojarras vendidas:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-sj-YOy">
-                                <rect key="frame" x="20" y="139" width="157" height="21"/>
+                                <rect key="frame" x="20" y="161" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tam-TB-iaU">
-                                <rect key="frame" x="20" y="168" width="157" height="21"/>
+                                <rect key="frame" x="20" y="190" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peso total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ6-Y0-laj">
-                                <rect key="frame" x="20" y="213" width="91" height="21"/>
+                                <rect key="frame" x="20" y="235" width="91" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000 Kg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFX-EA-JDd">
-                                <rect key="frame" x="20" y="242" width="157" height="21"/>
+                                <rect key="frame" x="20" y="264" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ganancias totales:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhm-qB-UM7">
-                                <rect key="frame" x="20" y="291" width="157" height="21"/>
+                                <rect key="frame" x="20" y="313" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$5000.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSY-aI-RBU">
-                                <rect key="frame" x="20" y="320" width="157" height="21"/>
+                                <rect key="frame" x="20" y="342" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Us-eE-qEq">
-                                <rect key="frame" x="110" y="371" width="101" height="30"/>
+                                <rect key="frame" x="110" y="387" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enviar al taller">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -339,7 +339,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqv-uE-F4K">
-                                <rect key="frame" x="20" y="89" width="280" height="30"/>
+                                <rect key="frame" x="20" y="111" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="01 / 02 / 2014">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -351,7 +351,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Reporte del día" id="Zf0-C7-uzq"/>
+                    <navigationItem key="navigationItem" title="Reporte del día" prompt="Rancho Valparaiso" id="Zf0-C7-uzq"/>
                     <connections>
                         <outlet property="dateButtonOutlet" destination="fqv-uE-F4K" id="vlq-3R-T5n"/>
                         <outlet property="earningsLabel" destination="FSY-aI-RBU" id="JJ6-dU-lRe"/>

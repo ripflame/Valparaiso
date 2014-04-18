@@ -92,7 +92,9 @@ typedef enum {
         
         [mailer setMessageBody:message isHTML:NO];
         
-        [self presentViewController:mailer animated:YES completion:nil];
+        [self presentViewController:mailer animated:YES completion:^{
+            [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+        }];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                         message:@"Tu dispositivo no puede mandar emails"
@@ -139,7 +141,7 @@ typedef enum {
 
 #pragma mark - Mailer delegate
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
