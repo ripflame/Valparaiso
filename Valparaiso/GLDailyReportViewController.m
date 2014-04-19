@@ -8,6 +8,7 @@
 
 #import "GLDailyReportViewController.h"
 #import "GLDatabaseController.h"
+#import "Sale.h"
 
 typedef enum {
     kEditingDateState,
@@ -26,6 +27,7 @@ typedef enum {
 
 - (IBAction)sendEmailTapped:(UIButton *)sender;
 - (IBAction)dateButtonTapped:(UIButton *)sender;
+- (IBAction)sendHistory:(UIButton *)sender;
 @end
 
 @implementation GLDailyReportViewController
@@ -51,8 +53,11 @@ typedef enum {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd / MM / yyyy"];
     [self.dateButtonOutlet setTitle:[formatter stringFromDate:[NSDate date]] forState:UIControlStateNormal];
-    
-    [self updateDataForDay:[formatter dateFromString:self.dateButtonOutlet.titleLabel.text]];
+    [self updateData];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self updateData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -139,6 +144,63 @@ typedef enum {
     }
 }
 
+- (IBAction)sendHistory:(UIButton *)sender {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd / MM / yyyy"];
+    
+    NSDate *day = [formatter dateFromString:self.dateButtonOutlet.titleLabel.text];
+    NSArray *sales = [GLDatabaseController getAllSalesFromDay:day];
+    
+    if ([sales count] == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!"
+                                                        message:@"Al parecer no hay datos para este día!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    } else {
+        if ([MFMailComposeViewController canSendMail]) {
+            MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+            
+            mailer.mailComposeDelegate = self;
+            
+            [mailer setSubject:@"Historial de venta de mojarra"];
+            [mailer setToRecipients:@[@"tornosleon@msn.com"]];
+            
+            NSString *date = self.dateButtonOutlet.titleLabel.text;
+            NSString *quantity = self.quantityLabel.text;
+            NSString *weight = self.weightLabel.text;
+            NSString *earnings = self.earningsLabel.text;
+            
+            NSString *message = [NSString stringWithFormat:@"Historial de venta con fecha: %@\n---------------------------------------------------\nMojarras vendidas: %@\nPeso total acumulado: %@\nGanancias totales del día: %@\n\nHistorial:\n\n", date, quantity, weight, earnings];
+            
+            for (Sale *currentSale in sales) {
+                message = [message stringByAppendingString:[NSString stringWithFormat:@"Cantidad: %@\t|\t", currentSale.quantity]];
+                message = [message stringByAppendingString:[NSString stringWithFormat:@"Peso: %@ Kg\t|\t", currentSale.weight]];
+                double price = [currentSale.price doubleValue];
+                double weight = [currentSale.weight doubleValue];
+                double total = price * weight;
+                message = [message stringByAppendingString:[NSString stringWithFormat:@"Total: $%.2f\t|\t", total]];
+                message = [message stringByAppendingString:[NSString stringWithFormat:@"Precio: $%.2f\n", price]];
+                message = [message stringByAppendingString:[NSString stringWithFormat:@"--------------------\n"]];
+            }
+            
+            [mailer setMessageBody:message isHTML:NO];
+            
+            [self presentViewController:mailer animated:YES completion:^{
+                [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+            }];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:@"Tu dispositivo no puede mandar emails"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+    }
+}
+
 #pragma mark - Mailer delegate
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
@@ -146,6 +208,17 @@ typedef enum {
 }
 
 #pragma mark - Helper methods
+
+- (void)updateData {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd / MM / yyyy"];
+    
+    NSDate *day = [formatter dateFromString:self.dateButtonOutlet.titleLabel.text];
+    
+    [self.quantityLabel setText:[[GLDatabaseController getQuantityTotalFromDay:day] stringValue]];
+    [self.weightLabel setText:[NSString stringWithFormat:@"%.2f Kg", [[GLDatabaseController getWeightTotalFromDay:day] doubleValue]]];
+    [self.earningsLabel setText:[NSString stringWithFormat:@"$%.2f", [[GLDatabaseController getSalesTotalFromDay:day] doubleValue]]];
+}
 
 - (void)updateDataForDay:(NSDate *)day {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

@@ -9,6 +9,7 @@
 #import "GLAppDelegate.h"
 #import "GLHistoryTableViewController.h"
 #import "GLSaleTableViewCell.h"
+#import "GLDatabaseController.h"
 #import "Sale.h"
 
 #define SALE @"Sale"
@@ -208,27 +209,38 @@
     [self.tableView endUpdates];
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        GLSaleTableViewCell *selectedCell = (GLSaleTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+        NSString *priceText = [selectedCell.priceLabel.text substringFromIndex:1];
+        [GLDatabaseController removeSaleWithQuantity:[NSNumber numberWithInt:[selectedCell.quantityLabel.text intValue]] weight:[NSNumber numberWithDouble:[selectedCell.weightLabel.text doubleValue]] andPrice:[NSNumber numberWithDouble:[priceText doubleValue]]];
+        
+        NSError *error;
+        if (![[self fetchedResultsController] performFetch:&error]) {
+            NSLog(@"Unresolved error %@, %@", error,[error localizedDescription]);
+            exit(-1);
+        }
+        
+//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView reloadData];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.

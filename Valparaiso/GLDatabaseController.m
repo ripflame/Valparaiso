@@ -111,4 +111,47 @@
     return [NSNumber numberWithDouble:dayTotal];
 }
 
++ (NSArray *)getAllSalesFromDay:(NSDate *)day {
+    GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:SALE inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"date == %@ ", day];
+    [request setEntity:entity];
+    [request setPredicate:predicate];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:request error:&error];
+    
+    return fetchedObjects;
+}
+
++ (BOOL)removeSaleWithQuantity:(NSNumber *)quantity weight:(NSNumber *)weight andPrice:(NSNumber *)price {
+    BOOL didRemoveSale = YES;
+    
+    GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSEntityDescription *entityDescriptor = [NSEntityDescription entityForName:SALE inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"quantity == %@ AND weight == %@ AND price == %@", quantity, weight, price];
+    [request setEntity:entityDescriptor];
+    [request setPredicate:predicate];
+    
+    NSError *error = nil;
+    NSArray *clientsFetched = [context executeFetchRequest:request error:&error];
+    
+    [context deleteObject:[clientsFetched firstObject]];
+    
+    [context save:&error];
+    if (error) {
+        NSLog(@"error: %@", error.localizedDescription);
+        didRemoveSale = NO;
+    }
+    
+    
+    return didRemoveSale;
+}
+
 @end

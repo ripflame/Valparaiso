@@ -139,6 +139,7 @@ typedef enum {
         [self saveSale];
         [self updateTotalField];
         [self updateSumField];
+        [self clearSale];
     }
 }
 
@@ -176,6 +177,12 @@ typedef enum {
     [self.weightField setText:@""];
     [self.priceField setText:@""];
     [self.totalField setText:@""];
+}
+
+- (void)clearSale {
+    [self.quantityField setText:@""];
+    [self.weightField setText:@""];
+    [self.priceField setText:@""];
 }
 
 - (void)dateChanged:(UIDatePicker *)sender {
@@ -222,7 +229,7 @@ typedef enum {
 - (BOOL) fieldsAreValid {
     BOOL areValid = YES;
     
-    if ( [self.quantityField.text isEqualToString:@""] && [self.weightField.text isEqualToString:@""] && [self.priceField.text isEqualToString:@""] ) {
+    if ( [self.quantityField.text isEqualToString:@""] || [self.weightField.text isEqualToString:@""] || [self.priceField.text isEqualToString:@""] ) {
         areValid = NO;
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Al parecer dejaste unos campos vacios!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alert show];
