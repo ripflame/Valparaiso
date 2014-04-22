@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D136C3D1906CFD800EEA56A /* reportIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D136C3C1906CFD800EEA56A /* reportIcon.png */; };
+		7D136C401906E9F000EEA56A /* GLGeneralReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D136C3F1906E9F000EEA56A /* GLGeneralReportViewController.m */; };
+		7D136C471906F1D000EEA56A /* launchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D136C451906F1D000EEA56A /* launchImage.png */; };
+		7D136C481906F1D000EEA56A /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D136C461906F1D000EEA56A /* launchImage@2x.png */; };
 		7D63DC5518FEECD000623B10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5418FEECD000623B10 /* Foundation.framework */; };
 		7D63DC5718FEECD000623B10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5618FEECD000623B10 /* CoreGraphics.framework */; };
 		7D63DC5918FEECD000623B10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D63DC5818FEECD000623B10 /* UIKit.framework */; };
@@ -41,8 +45,6 @@
 		7D63DCBE1900950C00623B10 /* appIconSpotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCBC1900950C00623B10 /* appIconSpotlight.png */; };
 		7D63DCCD19009A8400623B10 /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCCB19009A8400623B10 /* navBar.png */; };
 		7D63DCCE19009A8400623B10 /* navBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCCC19009A8400623B10 /* navBar@2x.png */; };
-		7D63DCD119009AF500623B10 /* launchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCCF19009AF500623B10 /* launchImage.png */; };
-		7D63DCD219009AF500623B10 /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCD019009AF500623B10 /* launchImage@2x.png */; };
 		7D63DCD41900A38200623B10 /* launchImageUltra.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D63DCD31900A38200623B10 /* launchImageUltra.png */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D136C3C1906CFD800EEA56A /* reportIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reportIcon.png; sourceTree = "<group>"; };
+		7D136C3E1906E9F000EEA56A /* GLGeneralReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeneralReportViewController.h; sourceTree = "<group>"; };
+		7D136C3F1906E9F000EEA56A /* GLGeneralReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGeneralReportViewController.m; sourceTree = "<group>"; };
+		7D136C451906F1D000EEA56A /* launchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage.png; sourceTree = "<group>"; };
+		7D136C461906F1D000EEA56A /* launchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.png"; sourceTree = "<group>"; };
 		7D63DC5118FEECD000623B10 /* Valparaiso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valparaiso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D63DC5418FEECD000623B10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7D63DC5618FEECD000623B10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,8 +107,6 @@
 		7D63DCBC1900950C00623B10 /* appIconSpotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconSpotlight.png; sourceTree = "<group>"; };
 		7D63DCCB19009A8400623B10 /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
 		7D63DCCC19009A8400623B10 /* navBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navBar@2x.png"; sourceTree = "<group>"; };
-		7D63DCCF19009AF500623B10 /* launchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage.png; sourceTree = "<group>"; };
-		7D63DCD019009AF500623B10 /* launchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage@2x.png"; sourceTree = "<group>"; };
 		7D63DCD31900A38200623B10 /* launchImageUltra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageUltra.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,6 +174,8 @@
 			children = (
 				7D63DC9518FF4D6A00623B10 /* Resources */,
 				7D63DC8918FEED4800623B10 /* Storyboard.storyboard */,
+				7D136C3E1906E9F000EEA56A /* GLGeneralReportViewController.h */,
+				7D136C3F1906E9F000EEA56A /* GLGeneralReportViewController.m */,
 				7D63DCA61900733700623B10 /* GLDailyReportViewController.h */,
 				7D63DCA71900733700623B10 /* GLDailyReportViewController.m */,
 				7D63DCA1190059FE00623B10 /* GLSaleTableViewCell.h */,
@@ -222,9 +229,10 @@
 		7D63DC9518FF4D6A00623B10 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D136C451906F1D000EEA56A /* launchImage.png */,
+				7D136C461906F1D000EEA56A /* launchImage@2x.png */,
+				7D136C3C1906CFD800EEA56A /* reportIcon.png */,
 				7D63DCD31900A38200623B10 /* launchImageUltra.png */,
-				7D63DCCF19009AF500623B10 /* launchImage.png */,
-				7D63DCD019009AF500623B10 /* launchImage@2x.png */,
 				7D63DCCB19009A8400623B10 /* navBar.png */,
 				7D63DCCC19009A8400623B10 /* navBar@2x.png */,
 				7D63DCBB1900950C00623B10 /* appIconSettings.png */,
@@ -320,20 +328,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D63DCD41900A38200623B10 /* launchImageUltra.png in Resources */,
-				7D63DCD119009AF500623B10 /* launchImage.png in Resources */,
+				7D136C471906F1D000EEA56A /* launchImage.png in Resources */,
 				7D63DCBD1900950C00623B10 /* appIconSettings.png in Resources */,
 				7D63DCA519006F2300623B10 /* 1397784025_history.png in Resources */,
 				7D63DC6118FEECD000623B10 /* InfoPlist.strings in Resources */,
 				7D63DCCE19009A8400623B10 /* navBar@2x.png in Resources */,
 				7D63DCB7190093F300623B10 /* appIcon.png in Resources */,
+				7D136C481906F1D000EEA56A /* launchImage@2x.png in Resources */,
 				7D63DC9918FF4DD200623B10 /* saleIcon20.png in Resources */,
 				7D63DCBE1900950C00623B10 /* appIconSpotlight.png in Resources */,
 				7D63DCB9190093F300623B10 /* iTunesArtwork.png in Resources */,
 				7D63DCBA190093F300623B10 /* iTunesArtwork@2x.png in Resources */,
 				7D63DC6C18FEECD000623B10 /* Images.xcassets in Resources */,
+				7D136C3D1906CFD800EEA56A /* reportIcon.png in Resources */,
 				7D63DCCD19009A8400623B10 /* navBar.png in Resources */,
 				7D63DCB8190093F300623B10 /* appIcon@2x.png in Resources */,
-				7D63DCD219009AF500623B10 /* launchImage@2x.png in Resources */,
 				7D63DC8A18FEED4800623B10 /* Storyboard.storyboard in Resources */,
 				7D63DC9D18FF4E8B00623B10 /* weekIcon.png in Resources */,
 			);
@@ -354,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D136C401906E9F000EEA56A /* GLGeneralReportViewController.m in Sources */,
 				7D63DC6318FEECD000623B10 /* main.m in Sources */,
 				7D63DC6A18FEECD000623B10 /* Valparaiso.xcdatamodeld in Sources */,
 				7D63DC9318FEFF3600623B10 /* GLSaleViewController.m in Sources */,
@@ -478,7 +488,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -494,7 +503,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

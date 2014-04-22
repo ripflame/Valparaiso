@@ -97,9 +97,7 @@ typedef enum {
         
         [mailer setMessageBody:message isHTML:NO];
         
-        [self presentViewController:mailer animated:YES completion:^{
-            [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-        }];
+        [self presentViewController:mailer animated:YES completion:nil];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                         message:@"Tu dispositivo no puede mandar emails"
@@ -187,9 +185,7 @@ typedef enum {
             
             [mailer setMessageBody:message isHTML:NO];
             
-            [self presentViewController:mailer animated:YES completion:^{
-                [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-            }];
+            [self presentViewController:mailer animated:YES completion:nil];
         } else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                             message:@"Tu dispositivo no puede mandar emails"
@@ -216,7 +212,7 @@ typedef enum {
     NSDate *day = [formatter dateFromString:self.dateButtonOutlet.titleLabel.text];
     
     [self.quantityLabel setText:[[GLDatabaseController getQuantityTotalFromDay:day] stringValue]];
-    [self.weightLabel setText:[NSString stringWithFormat:@"%.2f Kg", [[GLDatabaseController getWeightTotalFromDay:day] doubleValue]]];
+    [self.weightLabel setText:[NSString stringWithFormat:@"%.3f Kg", [[GLDatabaseController getWeightTotalFromDay:day] doubleValue]]];
     [self.earningsLabel setText:[NSString stringWithFormat:@"$%.2f", [[GLDatabaseController getSalesTotalFromDay:day] doubleValue]]];
 }
 
@@ -225,7 +221,7 @@ typedef enum {
     [formatter setDateFormat:@"dd / MM / yyyy"];
     
     [self.quantityLabel setText:[[GLDatabaseController getQuantityTotalFromDay:day] stringValue]];
-    [self.weightLabel setText:[NSString stringWithFormat:@"%.2f Kg", [[GLDatabaseController getWeightTotalFromDay:day] doubleValue]]];
+    [self.weightLabel setText:[NSString stringWithFormat:@"%.3f Kg", [[GLDatabaseController getWeightTotalFromDay:day] doubleValue]]];
     [self.earningsLabel setText:[NSString stringWithFormat:@"$%.2f", [[GLDatabaseController getSalesTotalFromDay:day] doubleValue]]];
 }
 

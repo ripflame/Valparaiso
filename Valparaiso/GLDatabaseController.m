@@ -127,6 +127,75 @@
     return fetchedObjects;
 }
 
++ (NSNumber *)getSalesTotal {
+    GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:SALE inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entity];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:request error:&error];
+    
+    
+    double total = 0;
+    
+    if (!error) {
+        for (Sale *sale in fetchedObjects) {
+            total += [sale.price doubleValue] * [sale.weight doubleValue];
+        }
+    }
+    
+    return [NSNumber numberWithDouble:total];
+}
+
++ (NSNumber *)getQuantityTotal {
+    GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:SALE inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entity];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:request error:&error];
+    
+    
+    int total = 0;
+    
+    if (!error) {
+        for (Sale *sale in fetchedObjects) {
+            total += [sale.quantity intValue];
+        }
+    }
+    
+    return [NSNumber numberWithInt:total];
+}
+
++ (NSNumber *)getWeightTotal {
+    GLAppDelegate *appDelegate = [[UIApplication sharedApplication]  delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:SALE inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entity];
+    
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:request error:&error];
+    
+    
+    double total = 0;
+    
+    if (!error) {
+        for (Sale *sale in fetchedObjects) {
+            total += [sale.weight doubleValue];
+        }
+    }
+    
+    return [NSNumber numberWithDouble:total];
+}
+
 + (BOOL)removeSaleWithQuantity:(NSNumber *)quantity weight:(NSNumber *)weight andPrice:(NSNumber *)price {
     BOOL didRemoveSale = YES;
     

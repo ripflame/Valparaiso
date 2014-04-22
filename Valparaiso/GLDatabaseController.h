@@ -18,6 +18,9 @@
 + (NSNumber *)getQuantityTotalFromDay:(NSDate *)day;
 + (NSNumber *)getWeightTotalFromDay:(NSDate *)day;
 + (NSArray *)getAllSalesFromDay:(NSDate *)day;
++ (NSNumber *)getSalesTotal;
++ (NSNumber *)getQuantityTotal;
++ (NSNumber *)getWeightTotal;
 + (BOOL)removeSaleWithQuantity:(NSNumber *)quantity weight:(NSNumber *)weight andPrice:(NSNumber *)price;
 
 @end
